@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Hausaufgabe4{
+public class Hausaufgabe4 {
 
     public static void main(String[] args) {
         Scanner keyb = new Scanner(System.in);

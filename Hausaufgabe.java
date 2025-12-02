@@ -1,13 +1,17 @@
 import java.util.*;
-public class Hausaufgabe{
-    public static void main (String [] args){
+
+public class Hausaufgabe {
+    public static void main(String[] args) {
         Scanner Keyb = new Scanner(System.in);
         int Tag, Monat, Jahr;
         String MonatStr = "";
-        System.out.println("Bitte geben Sie den Tag ein: "); Tag = Keyb.nextInt();
-        System.out.println("Bitte geben Sie den Monat ein: "); Monat = Keyb.nextInt();
-        System.out.println("Bitte geben Sie das Jahr ein: "); Jahr = Keyb.nextInt();
-        
+        System.out.println("Bitte geben Sie den Tag ein: ");
+        Tag = Keyb.nextInt();
+        System.out.println("Bitte geben Sie den Monat ein: ");
+        Monat = Keyb.nextInt();
+        System.out.println("Bitte geben Sie das Jahr ein: ");
+        Jahr = Keyb.nextInt();
+
         switch (Monat) {
             case 1:
                 MonatStr = "Januar";
@@ -15,7 +19,7 @@ public class Hausaufgabe{
             case 2:
                 MonatStr = "Februar";
                 break;
-             case 3:
+            case 3:
                 MonatStr = "März";
                 break;
             case 4:
@@ -50,7 +54,7 @@ public class Hausaufgabe{
                 break;
         }
         if (!MonatStr.isEmpty())
-        System.out.print("" + Tag +". " + MonatStr + " " + Jahr );
+            System.out.print("" + Tag + ". " + MonatStr + " " + Jahr);
 
     }
 }
