@@ -5,24 +5,35 @@ public class spiel21 {
         int zahl_strich, nimm;
 
         System.out.print( "Wieviele Striche sollen am Bildschirm ausgegeben werden: "); zahl_strich = Keyb.nextInt();
-
+        
         
 
         while (zahl_strich > 0){
             System.out.println( "\nStreichhoelzer auf dem Tisch: ");
-            int i = 1;
+            int i=1;
             while (i <= zahl_strich){
             System.out.print("|");
                 if(i%10==0){
                 System.out.print(" ");
-                i = i + 1;
             }
-            System.out.println( " (" + zahl_strich + ")" );
+            i = i + 1;
+            
              }
-             System.out.print( "Wie viele Streichhoelzer nimmst du ? "); nimm = Keyb.nextInt();
+             System.out.println( " (" + zahl_strich + ")" );
+             System.out.print( "\nWie viele Streichhoelzer nimmst du ? "); nimm = Keyb.nextInt();
+             
+             while ((nimm>4) || (nimm<=0)){
+            
+                System.out.println(+ nimm + " Hoelzer duerfen nicht genommen werden");
+                System.out.println("\nWieviele Hoelzer nimmst du wirklich?"); nimm = Keyb.nextInt();
+            
+             }
+
              zahl_strich = zahl_strich - nimm;
-            }
+            
             }   
         }
+
+    }
     
 
