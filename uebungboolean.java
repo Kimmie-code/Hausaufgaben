@@ -26,7 +26,7 @@ public class uebungboolean {
             if (tag > 30)
                 istKorrekt = false;
         }
-        if (jahr % 400 == 0 || jahr % 100 != 0 && jahr % 4 == 0 )
+        if (jahr % 400 == 0 || jahr % 100 != 0 && jahr % 4 == 0 ){}
 
 
 
