@@ -1,6 +1,7 @@
+package GUI;
 import java.awt.*;
 class Formular extends Frame{
-    
+
 }
 public class Haupt {
     public static void main(String args[]){
