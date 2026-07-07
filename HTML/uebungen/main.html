@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout uebung</title>
+</head>
+<body>
+    <p id="greeting">Hey hey hey hey hey hey</p>
+    <p id="Time"></p>
+</body>
+<script>
+    function Greeting2() {
+        document.getElementById("greeting").innerHTML = "STOP SPAMMING HEY'S"
+    }
+
+    const myTimeout = setTimeout(Greeting2 , 5000);
+
+    function MyStopTimeout(){
+        clearTimeout(myTimeout);
+    }
+
+    const Timer = setInterval(myTimer, 1000);
+
+    function myTimer(){
+        const date = new Date();
+        document.getElementById("Time").innerHTML = date.toLocaleTimeString();
+    }
+</script>
+</html>
