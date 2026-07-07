@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../../Downloads/Austeilen"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Austeilen"
+	}
+}
